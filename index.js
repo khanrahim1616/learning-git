@@ -558,17 +558,93 @@
 // let currdate=new Date();
 // console.log(currdate)
 // second method 
-console.log(new Date())
-console.log(new Date().toLocaleString())
-console.log(new Date().toString())
+// console.log(new Date())
+// console.log(new Date().toLocaleString())
+// console.log(new Date().toString())
+// console.log(Date.now()) //returns a millisecond
+
+// new Date(year,month,day,hour,minute,second,millisecond)
+// january is 0 december is 11
+// month argument is necessary and minimum there should be two arguments year and month
+// var d=new Date(2022,5,24,20,27,35,0)
+// console.log(d.toLocaleString())
+
+// new Date(string)
+// var d=new Date("jan 24,2022 21:42:0")
+// console.log(d.toLocaleString())
+
+// millisecond
+// var d=new Date(1656089227905)
+// console.log(d.toLocaleString())
+
+// var d=new Date(0)
+// console.log(d.toLocaleString())
+
+// how to get the individual date 
+// var currDate=new Date();
+// console.log(currDate.toLocaleString());
+// console.log(currDate.getFullYear());
+// console.log(currDate.getMonth());
+// console.log(currDate.getDate());
+// console.log(currDate.getDay());
+
+// how to get the individual time
+// var currDate=new Date();
+// console.log(currDate.toLocaleString());
+// console.log(currDate.getTime());
+// // the gettime() methopd returns a number of millisecond since januaryu 1 1970
+// console.log(currDate.getHours());
+// // the gethours() method returns  the hours of a date as a number
+// console.log(currDate.getMinutes());
+// console.log(currDate.getSeconds());
+// console.log(currDate.getMilliseconds());
+
+// how to get only time 
+// var time=new Date().toLocaleTimeString();
+// console.log(time)
 
 
+// how to get only date  
+// var date=new Date().toLocaleDateString();
+// console.log(date)
+
+// the java script math object allows you to prform methametical task on numbers
+
+// console.log(Math.PI)
 
 
+// Math.round() return the value of x rounded to its nearest intiger
+// var  num =   10.2565
+// console.log(Math.round(num))
+// var num =   10.5565
+// console.log(Math.round(num))
+
+// Math.pow(x,y)returns the value of x to the power of y 
+// console.log(Math.pow(2,3))
+// console.log(2**3)
+
+// Math.sqrt(x)retuyrn the root of x 
+// console.log(Math.sqrt(25))
+// console.log(Math.sqrt(36))
+// console.log(Math.sqrt(49))
+// console.log(Math.sqrt(9))
+
+// Math.abs()return the negative value to the positive value 
+// console.log(Math.abs(-9))
+// console.log(Math.abs(-64.9))
+// console.log(Math.abs(-999))
+// console.log(Math.abs(4-6))
+
+// Math.ceil()return the value of x rounded to its nearest intiger
+// console.log(Math.ceil(10.2565))
 
 
+// console.log(Math.round(10.2565))
 
-
+// Math.floor()returns the value of x rounded down to its  nearest intiger 
+// it does,nt effect after decimal value  
+console.log(Math.floor(4.7))
+console.log(Math.floor(99.9))
 
 
 
