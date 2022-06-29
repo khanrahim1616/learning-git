@@ -431,6 +431,7 @@
 //     return`Index no = ${index} and the value is ${curElm} belong to ${arr}`
 // })
 // console.log(newarr)
+
 // it return new array without mytating the orignl array
 
 // find the squar root of the element in an array
@@ -497,7 +498,6 @@
 // "string"replace()
 // the replace method does not change the orignal string and var firstNames = ["BlueRay ", "Upchuck ", "Lojack ", "Gizmo ", "Do-Rag "];
 
-
 // replace method replace only the first match and its case sensitivs
 // var myBiodata = "Abdul rahim khan rahim";
 // var replace = myBiodata.replace("rahim", "Rahim");
@@ -514,20 +514,17 @@
 // the method returns UTF-16 c'aprail','june','july']
 // const newmonths=months.splice(months.length,0,'December')
 // console.log(months)ode
-// (an integer between 0 and 65535)retrn the unicode of the last character of a string 
+// (an integer between 0 and 65535)retrn the unicode of the last character of a string
 
 // var Myname='Abdul Rahim'
 // console.log(Myname.charCodeAt(4))
 // var char='HELLO WORLD';
 // console.log(char.charCodeAt(6))
 
-
 // "String",touppercase(),tolowercase()
 // var Myname='Abdul Rahim'
 // console.log(Myname.toUpperCase())
 // console.log(Myname.toLowerCase())
-
-
 
 // "String",concat()
 // var fname='Abdul'
@@ -537,27 +534,26 @@
 // console.log(fname.concat(lname))
 // console.log(fname.concat(' ',lname))
 
-// "String",trim() the string mehod removes whitespace from both sides of a string 
+// "String",trim() the string mehod removes whitespace from both sides of a string
 // var world = "         HELLO WORLD!           "
 // console.log(world)
 // console.log(world.trim())
 
-// Split() 
-// A string can be converted to an Array with the Split method 
+// Split()
+// A string can be converted to an Array with the Split method
 
 // var text='a,b,c,d,e,f'
 // console.log(text.split(","));
 // console.log(text.split(" "));
 // console.log(text.split("|"));
 
-
 // dat and time Object
 // new Date()
 // date objects are created with the new date() constructor
-// first method of getting date and time 
+// first method of getting date and time
 // let currdate=new Date();
 // console.log(currdate)
-// second method 
+// second method
 // console.log(new Date())
 // console.log(new Date().toLocaleString())
 // console.log(new Date().toString())
@@ -580,7 +576,7 @@
 // var d=new Date(0)
 // console.log(d.toLocaleString())
 
-// how to get the individual date 
+// how to get the individual date
 // var currDate=new Date();
 // console.log(currDate.toLocaleString());
 // console.log(currDate.getFullYear());
@@ -599,12 +595,11 @@
 // console.log(currDate.getSeconds());
 // console.log(currDate.getMilliseconds());
 
-// how to get only time 
+// how to get only time
 // var time=new Date().toLocaleTimeString();
 // console.log(time)
 
-
-// how to get only date  
+// how to get only date
 // var date=new Date().toLocaleDateString();
 // console.log(date)
 
@@ -612,24 +607,23 @@
 
 // console.log(Math.PI)
 
-
 // Math.round() return the value of x rounded to its nearest intiger
 // var  num =   10.2565
 // console.log(Math.round(num))
 // var num =   10.5565
 // console.log(Math.round(num))
 
-// Math.pow(x,y)returns the value of x to the power of y 
+// Math.pow(x,y)returns the value of x to the power of y
 // console.log(Math.pow(2,3))
 // console.log(2**3)
 
-// Math.sqrt(x)retuyrn the root of x 
+// Math.sqrt(x)retuyrn the root of x
 // console.log(Math.sqrt(25))
 // console.log(Math.sqrt(36))
 // console.log(Math.sqrt(49))
 // console.log(Math.sqrt(9))
 
-// Math.abs()return the negative value to the positive value 
+// Math.abs()return the negative value to the positive value
 // console.log(Math.abs(-9))
 // console.log(Math.abs(-64.9))
 // console.log(Math.abs(-999))
@@ -638,13 +632,26 @@
 // Math.ceil()return the value of x rounded to its nearest intiger
 // console.log(Math.ceil(10.2565))
 
-
 // console.log(Math.round(10.2565))
 
-// Math.floor()returns the value of x rounded down to its  nearest intiger 
-// it does,nt effect after decimal value  
-console.log(Math.floor(4.7))
-console.log(Math.floor(99.9))
+// Math.floor()returns the value of x rounded down to its  nearest intiger
+// it does,nt effect after decimal value
+// console.log(Math.floor(4.7))
+// console.log(Math.floor(99.9))
+
+// Math.min() can be used to find the lowest value in a list of argument
+// console.log(Math.min(0,105,230,-280,-9,-6))
+
+// Math.max() can be used to find the highest value in a list of argument
+// console.log(Math.max(0,105,-280,-9,-6,230))
+
+// Math.random() returns a number between 0 and 1
+// console.log(Math.random())
+// console.log(Math.floor(Math.random()*10))// 0 to 9
+
+// Math.trunc() returns a intiger part of a number
+// console.log(Math.trunc(4.6))//only show before decimal part
+// console.log(Math.trunc(-99.6))
 
 
 
@@ -659,32 +666,73 @@ console.log(Math.floor(99.9))
 
 
 
+// var num = 1;
+// while(num <=10){
+//     console.log("2 x "+num+" = "+num*2);
+//     num++;
+// }
 
+// var num =[2,4,5,6,8,]
 
+// var newnum=num.filter((currElem)=>{
+//     return currElem%2!==0
+// })
+// console.log(newnum)
 
+// var newnum=num.map((curElem,index)=>{
+//     return curElem*(index+1)
+// })
+// console.log(newnum)
 
+// remove duplicates from an array using for loop
 
+// let number = [1, 2, 3, 4, 2, 3, 8];
+// let removedn = [];
+// for (var i = 0; i < number.length; i++) {
+//   if (removedn.indexOf(number[i]) === -1) {
+//     removedn.push(number[i]);
+//   }
+// }
+// console.log(removedn);
 
+// const number = prompt("Enter a positive number: ");
+// let Prime = true;
 
-
-
-
-
-
-
-
-
-
+// if (number === 1) {
+//     document.write("1 is neither prime nor composite number.");
+// }
+// else if (number > 1) {
+//     for (let i = 2; i < number; i++) {
+//         if (number % i == 0) {
+//             Prime = false;
+//             break;
+//         }
+//     }
+//     if (Prime==true) {
+//         document.write  (`${number} is a prime number`);
+//     } else {
+//         document.write  (`${number} is  not a prime number`);
+//     }
+// }
+// else {
+//     document.write  ("The number is not a prime number.");
+// }
 
 // var cityToCheck = prompt("Enter your city");
 // cityToCheck = cityToCheck.toLowerCase();
 // var cleanestCities = ["cheyenne", "santa fe", "tucson", "great falls", "honolulu"];
+// var numcheck= false;
 // for (var i = 0; i <= 4; i++) {
 // if (cityToCheck === cleanestCities[i]) {
-// alert("It's one of the cleanest cities");
-// } else {
-//     alert("It's not the cleanest city");
+// numcheck=true;
+// break;
 // }
+// }
+// if (numcheck==true) {
+//     alert("It's one of the cleanest cities");
+// }
+// else {
+//     alert("It's not the cleanest city");
 // }
 
 // var time=21
@@ -699,3 +747,42 @@ console.log(Math.floor(99.9))
 //     console.log(greeting3)
 //   }
 
+// const number = prompt("Enter a positive number: ");
+// let Prime = true;
+
+// if (number === 1) {
+//     document.write("1 is neither prime nor composite number.");
+// }
+// else if (number > 1) {
+//     for (let i = 2; i < number; i++) {
+//         if (number % i == 0) {
+//             Prime = false;
+//             break;
+//         }
+//     }
+//     if (Prime==true) {
+//         document.write  (`${number} is a prime number`);
+//     } else {
+//         document.write  (`${number} is  not a prime number`);
+//     }
+
+
+
+
+function isPrimeNum(num) {
+  for (let index = 2; index <num; index++) {
+    if (num % index == 0) {
+      return false;
+    }
+  }
+  return true;
+}
+var user=+prompt("Enter a number")
+var arr=[]
+for (let index = 2; arr.length<user; index++) {
+    if (isPrimeNum(index)) {
+        arr.push(index)
+    }
+}
+console.log(arr)
+document.write(arr)

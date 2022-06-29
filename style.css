@@ -2,10 +2,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-};
+}
  .container{
-    background-color: aqua;
+    background-color: purple;
     width: 1250px;
     margin: 0 auto;
     max-width: 100%;
-};
+}
+form{
+    color: aliceblue;
+}   

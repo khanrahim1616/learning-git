@@ -1,12 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>learning java script</title>
     <script src="./index.js"></script>
-</head>
-<body>
-</body>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- <div class="container">
+      <div id="firstdiv">
+        welcome to computing yard
+        <p class="pera">how are you</p>
+        <p class="pera">how`s your life going</p>
+        <p>i am available for you any time</p>
+        <form action="">
+          <label for="">Male</label>
+          <input type="radio" name="gender" >
+          <label for="">Female</label>
+          <input type="radio" name="gender">
+          <label for="">MaleFemale</label>
+          <input type="radio" name="gender" >
+        </form>
+      </div>
+      
+      <button onclick="changeContent()">click me</button>
+    </div> -->
+    <script>
+      const changeContent = () => {
+        // document.getElementById("firstdiv").innerHTML ="How`s  your experrience here";
+        // console.log(document.getElementsByClassName("pera"));
+        // console.log(document.getElementsByTagName("p"));
+        // console.log(document.getElementsByName('gender'));
+
+// queryselector() changes only the first element wheread queryselector changes the all
+// document.querySelector('#firstdiv').innerHTML='i have changed my life'
+// document.querySelector('.pera').innerHTML='i have changed my life'
+console.log(document.querySelectorAll('#firstdiv'))
+      };
+    </script>
+  </body>
 </html>
