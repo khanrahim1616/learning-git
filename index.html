@@ -9,36 +9,50 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <!-- <div class="container">
-      <div id="firstdiv">
+    <div class="container">
+      <div>
         welcome to computing yard
         <p class="pera">how are you</p>
         <p class="pera">how`s your life going</p>
         <p>i am available for you any time</p>
         <form action="">
           <label for="">Male</label>
-          <input type="radio" name="gender" >
+          <input type="radio" name="gender" />
           <label for="">Female</label>
-          <input type="radio" name="gender">
+          <input type="radio" name="gender" />
           <label for="">MaleFemale</label>
-          <input type="radio" name="gender" >
+          <input type="radio" name="gender" />
         </form>
       </div>
-      
+      <button id="firstdiv">firstdiv</button>
       <button onclick="changeContent()">click me</button>
-    </div> -->
+    </div>
     <script>
-      const changeContent = () => {
-        // document.getElementById("firstdiv").innerHTML ="How`s  your experrience here";
-        // console.log(document.getElementsByClassName("pera"));
-        // console.log(document.getElementsByTagName("p"));
-        // console.log(document.getElementsByName('gender'));
+      // const changeContent = () => {
+      // document.getElementById("firstdiv").innerHTML ="How`s  your experrience here";
+      // console.log(document.getElementsByClassName("pera"));
+      // console.log(document.getElementsByTagName("p"));
+      // console.log(document.getElementsByName('gender'));
 
-// queryselector() changes only the first element wheread queryselector changes the all
-// document.querySelector('#firstdiv').innerHTML='i have changed my life'
-// document.querySelector('.pera').innerHTML='i have changed my life'
-console.log(document.querySelectorAll('#firstdiv'))
+      // queryselector() changes only the first element wheread queryselector changes the all
+      // document.querySelector('#firstdiv').innerHTML='i have changed my life'
+      // document.querySelector('.pera').innerHTML='i have changed my life'
+      // console.log(document.querySelectorAll('#firstdiv'))
+      //       };
+
+
+
+
+
+      // fourth way
+      const firstdiv = document.getElementById("firstdiv");
+      const checkevent = () => {
+        alert("aap dekh rahe hain event object");
+        console.log(event);
+        console.log(event.target);
+        console.log(event.type);
       };
+      firstdiv.addEventListener("click", checkevent);
     </script>
   </body>
 </html>
