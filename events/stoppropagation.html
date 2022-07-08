@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #maindiv {
+        width: 50%;
+        height: 200px;
+        display: grid;
+        place-items: center;
+        background-color: blue;  
+        margin: auto;
+        padding-top: 40px;
+
+      }
+      #box {
+        text-align: center;
+        width: 50%;
+        height: 100px;
+        background: gold;
+        padding-top: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <div  id="maindiv">
+      click main div to see alert
+      <div id="box">
+       click box div to see alert
+      </div>
+    </div>
+    <script>
+       const maindivid=document.getElementById('maindiv');
+       const boxdivid=document.getElementById('box');
+       
+const maindivCall=()=>{
+    alert('calling parent div')
+}
+
+const boxdivCall=()=>{
+    alert('calling child div')
+    // event.stopPropagation()
+}
+//if we put third argument  true it will look backforward 
+maindivid.addEventListener('click',maindivCall,true)
+boxdivid.addEventListener('click',boxdivCall,true) 
+
+
+
+       </script>
+  </body>
+</html>
+

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .maindiv {
+        width: 100vw;
+        height: 100vh;
+        display: grid;
+        place-items: center;
+      }
+      #box {
+        text-align: center;
+        width: 100%;
+        /* height: 100px; */
+        background: gold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="maindiv">
+      <div id="box">
+<label for="">Your Name</label>
+<input type="text" name="" id="ice">
+<br>
+<label for="">
+    Choose an ice cream flavour 
+    <!-- <select name="iceCreams" id="iceCreams" onchange="SelectElement()"> -->
+    <select name="iceCreams" id="iceCreams">
+    <option value="">Select one</option>
+    <option value="chocolate">chocolate</option>
+    <option value="sardine">sardine</option>
+    <option value="vanilla">vanilla</option>
+    </select>   
+</label>
+<br>
+<div id="result"></div>
+      </div>
+    </div>
+    <script>
+        // const SelectElement = ()=>{
+        //     const inputchange=document.getElementById('ice').value;
+        //     const iceCreams=document.getElementById('iceCreams').value;
+        //     const result = document.getElementById('result').innerHTML=`Mr ${inputchange} select ${iceCreams} ice-cream flavour `
+        //     console.log(`${inputchange} and ${iceCreams}`)
+        // }
+        
+        const iceCreams=document.getElementById('iceCreams');
+
+        iceCreams.addEventListener('change',()=>{
+            const inputchange=document.getElementById('ice').value;
+            const iceCreams=document.getElementById('iceCreams').value;
+            const result = document.getElementById('result').innerHTML=`Mr ${inputchange} select ${iceCreams} ice-cream flavour `
+            console.log(`${inputchange} and ${iceCreams}`)
+        })
+
+
+    </script>
+  </body>
+</html>

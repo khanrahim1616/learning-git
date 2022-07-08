@@ -32,10 +32,10 @@
 // // console.log(num);
 // // console.log(newnum);
 
-// // // // // // var a = 18 ;
-// // // // // // var b = 15 ;
-// // // // // // console.log(a == b)
-// // // // // // console.log(a <b)
+//  var a = 18 ;
+//  var b = 15 ;
+//  console.log(a == b)
+//  console.log(a >b)
 
 // // alert("hello world")
 
@@ -88,14 +88,14 @@
 //     spec = prompt(question, defaultAnswer);
 //  }
 
-// // // // //  var tomr ='rain'
+//  var tomr ='rain'
 
-// // // // //  if(tomr == 'rain'){
-// // // // //      console.log('take a raincoat')
-// // // // //  }
-// // // // //  else{
-// // // // //      console.log('no need to take a raincoat')
-// // // // //  }
+//  if(tomr == 'rain'){
+//      console.log('take a raincoat')
+//  }
+//  else{
+//      console.log('no need to take a raincoat')
+//  }
 
 // // // // // var year = 2020;
 // // // // // debugger;
@@ -112,21 +112,22 @@
 // // // // //     console.log("the year" + year + "is not a leap year")
 // // // // // }
 
-// // // // // if(score=0){
-// // // // //     console.log("OMG, we loss the game")
-// // // // // }else{
-// // // // //     console.log("yay, we won the game")
-// // // // // }
 
-// // // // // var age =18
-// // // // // if(age => 18 ){
-// // // // //     console.log("you are eligible to vote")
-// // // // // }else{
-// // // // //     console.log("you are not eligible to vote")
-// // // // // }
+// if(score==0){
+//     console.log("OMG, we loss the game")
+// }else{
+//     console.log("yay, we won the game")
+// }
 
-// // // // // var age =17
-// // // // // console.log((age >= 18 ) ?  "you can vote": "you can't vote")
+// var age =18
+// if(age => 18 ){
+//     console.log("you are eligible to vote")
+// }else{
+//     console.log("you are not eligible to vote")
+// }
+
+// var age =17
+// console.log((age >= 18 ) ?  "you can vote": "you can't vote")
 
 // // // //  var area = "circle" ;
 // // // //  var PI =3.142 , l=5, b=4, r=3;
@@ -153,11 +154,11 @@
 // // // }
 
 // // Do-whileloop
-// //  var num =0;
-// //  do{
-// //      console.log(num);
-// //      num++;
-// //  }while(num <=10);
+//  var num =0;
+//  do{
+//      console.log(num);
+//      num++;
+//  }while(num <=10);
 
 // // forloop
 // // for(var num=0; num<=10 ; num++){
@@ -632,7 +633,7 @@
 // Math.ceil()return the value of x rounded to its nearest intiger
 // console.log(Math.ceil(10.2565))
 
-// console.log(Math.round(10.2565))
+// console.log(Math.round(10.2565))//after point 5 is nessecary
 
 // Math.floor()returns the value of x rounded down to its  nearest intiger
 // it does,nt effect after decimal value
@@ -653,136 +654,378 @@
 // console.log(Math.trunc(4.6))//only show before decimal part
 // console.log(Math.trunc(-99.6))
 
+// yahan events parha hai hum ne jinki alag file hai
+
+// "object"
+
+// how to create an object
+
+// 1st way 
+// let bioData= {
+//     myName:"Abdul Rahim",
+//     myAge:23    ,
+//     getdata:function () {
+//         console.log(`My name is ${bioData.myName} and my age is ${bioData.myAge}`)
+        
+//     }
+// }
+// bioData.getdata()
+
+// 2nd way   after es6 no need to write function
+
+// let bioData= {
+//     myName:"Abdul Rahim",
+//     myAge:23    ,
+//     getdata() {
+//         console.log(`My name is ${bioData.myName} and my age is ${bioData.myAge}`)
+        
+//     }
+// }
+// bioData.getdata()
 
 
+// what if we want object as a value inside an object
 
 
+// let bioData= {
+//     myName:{
+//         firstName:"Abdul Rahim",
+//         lastName:"khan",
+//     },
+//     myAge:23    ,
+//     getdata() {
+//         console.log(`My name is ${bioData.myName} and my age is ${bioData.myAge}`)
+        
+//     }
+// }
+// console.log(bioData.myName.lastName)
 
+// "This object" it contain the current context
+// the this object can have different values depending on where it is placed
+// ex 1
+// console.log(this)
+// console.log(this.alert('AWESOME'))   
 
+// ex 2
 
+// function myName() {
+//     console.log(this)//its still now a window object
+// }
+// myName()
 
+// ex 3
 
+// var myNames="Ab.Rhaim"
+// function myName() {
+//   console.log(this.myNames)  
+// }
+// myName()
 
+// ex 4
 
+// var obj={
+//     myNames:"Ab.Rahim",
+//     myAge:22,
+//     myName(){
+//     console.log(this.myNames)
+// }
+// }
+// obj.myName();
 
+// ex 5 this object will not work with fat arro => function
 
-// var num = 1;
-// while(num <=10){
-//     console.log("2 x "+num+" = "+num*2);
-//     num++;
+// var obj={
+//     myNames:"Ab.Rahim",
+//     myAge:22,
+//     myName:()=>{
+//     console.log(this)
+//     // console.log(this.myNames)
+// }
+// }
+// obj.myName();
+
+// ex 6
+
+// let bioData={
+//     myName:{
+//         firstName:"Abdul Rahim",
+//         lastNmae:"Khan",
+//     },
+//     Myage:24,
+//     getData(){
+//         console.log(`My name is ${this.myName.firstName} and my age is ${this.Myage}`)
+//     }
 // }
 
-// var num =[2,4,5,6,8,]
+// bioData.getData()
 
-// var newnum=num.filter((currElem)=>{
-//     return currElem%2!==0
-// })
+
+
+// Array destructing    
+//  const myBiodata=['Abdul Rahim','Khan',24];
+//     // let myFname=myBiodata[0];
+//     // let mylname=myBiodata[1];
+//     // let myAge=myBiodata[2];
+//     // console.log(myAge);
+// let [myFname,mylname,myAge]=myBiodata;  
+// console.log(myAge)
+
+// we can add values too
+// const myBiodata=['Abdul Rahim','Khan',24];
+// let [myFname,mylname,myAge,myDegree="Enter"]=myBiodata;  
+// console.log(myDegree)
+
+// object destructing
+
+// const myBiodata={
+
+//     myFname:"Abdul rahim",
+//     myLname:"Khan",
+//     myAge:24,
+// }
+// let myFname=myBiodata.myFname;
+// let myLname=myBiodata.myLname;
+// let myAge=myBiodata.myAge;
+// console.log(myAge)
+
+// let {myFname,myLname,myAge,myDegree="Enter"}=myBiodata;
+// console.log(myDegree);
+
+
+// object properties
+// we can now use dynamic properties
+// let myname="Rahim"
+// const myBio={
+//     myname: "hello how are you?",
+//     26:"is my age"
+// }
+// console.log(myBio)
+
+// new 
+// let myname="Rahim"
+// const myBio={
+//     [myname]: "hello how are you?",
+//     [20+4]:"is my age"
+// }
+// console.log(myBio)
+
+// no need to write key and value if both are same 
+// let myName="Abdul rahim";
+// let age=24;
+// const mybio={
+//     myName:myName ,
+//     age:age,
+// };
+// console.log(mybio)
+
+// new 
+// let myName="Abdul rahim";
+// let age=24;
+// const mybio={
+//     myName,age
+// };
+// console.log(mybio)
+
+
+// spread operator...
+// let colors=['red','yellow','green','purple'];
+// let addingmorecolors=[...colors,'white','blue'];
+// console.log(addingmorecolors);
+
+// (2018) also we can use for object
+// let colors={name:"ab.rahim",age:24,};
+// let addingmorecolors={...colors,education:"Enter", };
+// console.log(addingmorecolors);
+
+
+
+
+
+// ES7 features
+
+// 1:array prototpe include
+// const colors=['red','yellow','green','purple'];
+// const ispresent=colors.includes('yellow')
+// console.log(ispresent)
+
+// 2:** exponentiation operator
+// console.log(2**5) 
+
+
+// ES8 
+
+// string padding
+
+// var namee="rahim";
+// console.log(namee)
+// var newname="rahim".padStart(9)
+// console.log(newname)
+
+// Object.values() get value in an arrayb 
+// const biodata={name:"ab.rahim",age:24,}
+// console.log(Object.values(biodata))
+
+// Object.entries()//converts into array
+// const biodata={name:"ab.rahim",age:24,}
+// console.log(Object.entries(biodata))
+
+// 2019 flat a dimensional array
+// var arr=[['hello','world'],['hello1','world1'],['hello2','world2'],['hello3',['hello4','world4']]]
+// console.log(arr.flat(Infinity))
+
+// Object.entries()//converts into array and objrct .form entries return it back to an object
+// const biodata={name:"ab.rahim",age:24,}
+// const biodat2=Object.entries(biodata)
+// console.log(biodat2)
+// console.log(Object.fromEntries(biodat2))
+
+
+
+// ES2020
+// #1;BigInt
+// let oldnumber=Number.MAX_SAFE_INTEGER;
+// console.log(oldnumber)
+// console.log(9007199254740991n+10n)
+// let newnum=9007199254740991n+5n
 // console.log(newnum)
+// console.log(typeof newnum )
 
-// var newnum=num.map((curElem,index)=>{
-//     return curElem*(index+1)
-// })
-// console.log(newnum)
+// higher order function aesa function jo doosre function ka as a argument accept karlay
+// calculator is a higher order function and these three are callback function 
 
-// remove duplicates from an array using for loop
-
-// let number = [1, 2, 3, 4, 2, 3, 8];
-// let removedn = [];
-// for (var i = 0; i < number.length; i++) {
-//   if (removedn.indexOf(number[i]) === -1) {
-//     removedn.push(number[i]);
-//   }
+// const add=(a,b)=>{
+//     return a+b;
 // }
-// console.log(removedn);
-
-// const number = prompt("Enter a positive number: ");
-// let Prime = true;
-
-// if (number === 1) {
-//     document.write("1 is neither prime nor composite number.");
+// const sub=(a,b)=>{
+//     return Math.abs(a-b);
 // }
-// else if (number > 1) {
-//     for (let i = 2; i < number; i++) {
-//         if (number % i == 0) {
-//             Prime = false;
-//             break;
-//         }
-//     }
-//     if (Prime==true) {
-//         document.write  (`${number} is a prime number`);
-//     } else {
-//         document.write  (`${number} is  not a prime number`);
-//     }
-// }
-// else {
-//     document.write  ("The number is not a prime number.");
+// const mult=(a,b)=>{
+//     return a*b;
 // }
 
-// var cityToCheck = prompt("Enter your city");
-// cityToCheck = cityToCheck.toLowerCase();
-// var cleanestCities = ["cheyenne", "santa fe", "tucson", "great falls", "honolulu"];
-// var numcheck= false;
-// for (var i = 0; i <= 4; i++) {
-// if (cityToCheck === cleanestCities[i]) {
-// numcheck=true;
-// break;
+// const calculator =(num1,num2,operartor)=>{
+// return operartor(num1,num2)
 // }
+// console.log(calculator(5,2,mult))
+
+
+
+// hoisting in java script 
+
+// For example// undefined
+// console.log(myName);
+// var myName;
+// myName='Abdul Rahim'
+
+
+
+// For example//corret
+// var myName;
+// myName='Abdul Rahim'
+// console.log(myName);
+
+// For example cannot acess before initialize
+// console.log(myName);
+// let myName;
+// myName='Abdul Rahim'
+
+
+// For example//correct
+// let myName;
+// myName='Abdul Rahim'
+// console.log(myName);
+
+
+
+// lexical scopping inner function can get access to their parent function variable and global scope variable
+// but parent cant acccess theri child variable
+
+// let a="Hello guys";
+
+// const first =()=>{   
+//     let b=" how are you";
+//     const second =()=>{
+//         let c=" Hii i am fine thank you 💯" 
+//         console.log((a+b+c))
+//     }        
+//     second()
+//     console.log((a+b+c))//cant use
+
 // }
-// if (numcheck==true) {
-//     alert("It's one of the cleanest cities");
+// first()
+
+// const outter =(a)=>{   
+//     let b=10;
+//     const inner =()=>{
+//     let sum=a+b;
+//     console.log(`the sum of the two number is ${sum}`)
+//     }        
+//     inner()
 // }
-// else {
-//     alert("It's not the cleanest city");
+// outter(5)
+
+// "use strict"
+// x="Abdul rahim"//after "use strict" u cannot asign without using var let and const 
+// console.log(x)
+
+
+
+// synchronus java Script
+
+// const fun2=()=>{
+//     console.log('function 2 is called')
 // }
-
-// var time=21
-// if (time < 10) {
-//     greeting1 = "Good morning";
-//     console.log(greeting1)
-// } else if (time < 20) {
-//     greeting2 = "Good day";
-//     console.log(greeting2)
-//   } else {
-//     greeting3 = "Good evening";
-//     console.log(greeting3)
-//   }
-
-// const number = prompt("Enter a positive number: ");
-// let Prime = true;
-
-// if (number === 1) {
-//     document.write("1 is neither prime nor composite number.");
+// const fun1=()=>{
+//     console.log('function 1 is called')
+//     fun2()
+//     console.log('function 1 is called again')
 // }
-// else if (number > 1) {
-//     for (let i = 2; i < number; i++) {
-//         if (number % i == 0) {
-//             Prime = false;
-//             break;
-//         }
-//     }
-//     if (Prime==true) {
-//         document.write  (`${number} is a prime number`);
-//     } else {
-//         document.write  (`${number} is  not a prime number`);
-//     }
+// fun1()
+
+
+// Asynchronus java Script
+
+// const fun2=()=>{
+// setTimeout(() => {
+//     console.log('function 2 is called')
+// },2000);
+// }
+// const fun1=()=>{
+//     console.log('function 1 is called')
+//     fun2()
+//     console.log('function 1 is called again')
+// }
+// fun1()
 
 
 
+// function currying   
 
-function isPrimeNum(num) {
-  for (let index = 2; index <num; index++) {
-    if (num % index == 0) {
-      return false;
-    }
-  }
-  return true;
-}
-var user=+prompt("Enter a number")
-var arr=[]
-for (let index = 2; arr.length<user; index++) {
-    if (isPrimeNum(index)) {
-        arr.push(index)
-    }
-}
-console.log(arr)
-document.write(arr)
+    // function sum(num1) {
+    //     // console.log(num1)
+    //     return function (num2) {
+    //         // console.log(num1,num2)
+    //         return function (num3) {
+    //             console.log(num1+num2+num3)
+    //         }
+    //     }
+    // }
+    // sum(5)(8)(3)
+
+// const sum=(num1)=>(num2)=>(num3)=>console.log(num1+num2+num3)
+
+// sum(5)(8)(3)
+
+// JSON
+// var object_as_string=JSON.stringify(my_object)
+
+//     var my_object={ key_1:"some text",key_2:true,key_3:5,}       
+//     console.log(my_object)
+//     var object_as_string=JSON.stringify(my_object)
+//     //{ "key_1":"some text","key_2":true,"key_3":5,}
+//     console.log(object_as_string)
+//     typeof(object_as_string)
+//     // reverse it json data transfer to like an object 
+//     var object_as_string=JSON.parse(object_as_string)
+//     //{ key_1:"some text",key_2:true,key_3:5,}
+// console.log(object_as_string)

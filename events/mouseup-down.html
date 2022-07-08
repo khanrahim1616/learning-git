@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mouse-event</title>
+    <style>
+        body{
+            background-color: blue;
+            cursor: wait;
+        }
+    </style>
+  </head>
+  <body>
+    <p id="myp" onmousedown="mouseDown()" onmouseup="mouseUp()">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur
+      consectetur quidem recusandae veniam numquam voluptas animi illo
+      voluptatem mollitia eius illum, molestiae hic reprehenderit eos vel ab
+      eaque consequuntur sunt!
+    </p>
+    <script>
+function mouseDown() {
+    document.getElementById('myp').style.color='yellow';
+}
+
+function mouseUp() {
+    document.getElementById('myp').style.color='red'
+}
+
+
+    </script>
+  </body>
+</html>

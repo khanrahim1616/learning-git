@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    background: purple;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+flex-direction: column;
+line-height: 2;
+}
+.btn{
+    cursor: pointer;
+    border: none;
+    padding: 20px;
+    border-radius: 50%;
+}
