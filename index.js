@@ -1,36 +1,37 @@
 // // // vbriable-naming-practice
-// // var myname  ="Abdul rahim";
-// // console.log(myname);
-// //  console.log(typeof(myname));
+// var myname  ="Abdul rahim";
+// console.log(myname);
+//  console.log(typeof(myname));
 
-// //  var myage = 23 ;
-// // console.log(myage);
-// // console.log(typeof(myage));
-// // console.log(10 + "20");
-// // console.log(10 - "5"); bug
-// // console.log("Java " + "script");
-// // ("Java " - "script");NaN
-// //  console.log("false" - "true") ;
-// // var iAmuseless = null; bugitsnotobject
-// // console.log(iAmuseless);
-// // console.log(typeof(iAmuseless));
-// // var iAmstandby;
-// // console.log(iAmstandby);
-// // // // // // console.log(typeof(iAmstandby));
+//  var myage = 23 ;
+// console.log(myage);
+// console.log(typeof(myage));
+// console.log(10 + "20");
+// console.log(10 - "5"); //bug
+// console.log("Java " + "script");
+// console.log("Java " - "script");//NaN
+//  console.log("false" - "true") ;//NaN
+// var iAmuseless = null; //bugitsnotobject
+// console.log(iAmuseless);
+// console.log(typeof(iAmuseless));
+// var iAmstandby;
+// console.log(iAmstandby);
+// console.log(typeof(iAmstandby));
 
-// // // // // // var myPhonenumber = 363793828;
-// // // // // // var myName        ="Abdul Rahim "
-// // // // // // console.log(isNaN(myPhonenumber))
-// // // // // // console.log(isNaN(myName))
-// // // // // // if(isNaN(myName)){
-// // // // // //     console.log("plz enter valid phone no.")
-// // // // // // }
-// // console.log("Remainder operator " + 27%4)
+// var myPhonenumber = 363793828;
+// var myName        ="Abdul Rahim "
+// console.log(isNaN(myPhonenumber))
+// console.log(isNaN(myName))
 
-// // var num =15;
-// // var newnum=num++ +5;
-// // console.log(num);
-// // console.log(newnum);
+// if(isNaN(myName)){
+//     console.log("plz enter valid phone no.")
+// }
+// console.log("Remainder operator " + 27%4)
+
+// var num =15;
+// var newnum=num++ +5;
+// console.log(num);
+// console.log(newnum);
 
 //  var a = 18 ;
 //  var b = 15 ;
@@ -39,47 +40,48 @@
 
 // // alert("hello world")
 
-// // // // // // document.write("Raheem Bhai Zindabad")
+// document.write("Raheem Bhai Zindabad")
 
-// // // // // // console.log(3**4)
+// console.log(3**4)//3*3*3*3=81
 
-// // // // // // var a = 5 ;
-// // // // // // var b = 10 ;
+// var a = 5 ;
+// var b = 10 ;
 
-// // // // // // // output b=5; a=10
-// // // // // //  c=b      //c=10;
-// // // // // //  b=a     // b=5;
-// // // // // //  a=c     //a=10
+// // // // // // // // output b=5; a=10
+//  c=b      //c=10;
+//  b=a     // b=5;
+//  a=c     //a=10
+// console.log("the value of a is " + a)
+// console.log("the value of b is " + b)
 
-// // // // // // console.log("the value of a is " + a)
-// // // // // // console.log("the value of b is " + b)
+// var a = 5 ;
+// var b = 10 ;
+// // // output b=5; a=10
 
-// // // // // var a = 5 ;
-// // // // // var b = 10 ;
-// // // // // // // output b=5; a=10
+// a = a+b;    //a=15
+// b=  a-b     //b=5
+// a= a-b      //a=10
 
-// // // // // a = a+b;    //a=15
-// // // // // b=  a-b     //b=5
-// // // // // a= a-b      //a=10
+// console.log("the value of a is " + a)
+// console.log("the value of b is " + b)
 
-// // // // // console.log("the value of a is " + a)
-// // // // // console.log("the value of b is " + b)
-
-// // // // // var num1=5;
-// // // // // var num2='5';
-// // // // // console.log(typeof(num1));
-// // // // // console.log(typeof(num2));
-// // // // // console.log( num1 == num2 );
 
 // var num1=5;
 // var num2='5';
 // console.log(typeof(num1));
 // console.log(typeof(num2));
-// console.log( num1 === num2 );
+// console.log( num1 == num2 );
+
+// var num1=5;
+// var num2='5';
+// console.log(typeof(num1));
+// console.log(typeof(num2));
+// console.log( num1 === num2 );//=== also looks at typeof
+
 
 //  var message = "Thanks for your input!";
 //  alert(message);
-
+    
 // var question = "Your gender?";
 //  var defaultAnswer = "Male/Female";
 //  var spec = prompt(question, defaultAnswer);
@@ -97,87 +99,88 @@
 //      console.log('no need to take a raincoat')
 //  }
 
-// // // // // var year = 2020;
-// // // // // debugger;
-// // // // // if(year % 4 === 0){
-// // // // //   if(year % 100 === 0){
-// // // // //     if(year % 400 === 0){
-// // // // //        console.log("the year " + year + " is a leap year")
-// // // // // }else{
-// // // // //     console.log("the year" + year + "is not a leap year")}
-// // // // // }else{
-// // // // //     console.log("the year " + year + " is a leap year")
-// // // // // }
-// // // // // }else{
-// // // // //     console.log("the year" + year + "is not a leap year")
-// // // // // }
 
+// var year = 2021;
+// debugger;
+// if(year % 4 === 0){
+//   if(year % 100 === 0){
+//     if(year % 400 === 0){
+//        console.log("the year " + year + " is a leap year")
+// }else{
+//     console.log("the year " + year + " is not a leap year")}
+// }else{
+//     console.log("the year " + year + " is a leap year")
+// }
+// }else{
+//     console.log("the year " + year + " is not a leap year")
+// }
 
+// var score = 0;
 // if(score==0){
 //     console.log("OMG, we loss the game")
 // }else{
 //     console.log("yay, we won the game")
 // }
 
-// var age =18
-// if(age => 18 ){
+// var age =17
+// if(age >= 18 ){
 //     console.log("you are eligible to vote")
 // }else{
 //     console.log("you are not eligible to vote")
 // }
 
 // var age =17
-// console.log((age >= 18 ) ?  "you can vote": "you can't vote")
+// console.log((age >= 18 )  ? "you can vote": "you can't vote")
 
-// // // //  var area = "circle" ;
-// // // //  var PI =3.142 , l=5, b=4, r=3;
 
-// // // //  switch(area) {
-// // // //      case 'circle':
-// // // //          console.log("the area of circle is:" + PI*r**2);
-// // // //          break;
-// // // //          case 'triangle':
-// // // //             console.log("the area of triangle is:" + (l*b)/2);
-// // // //            break;
-// // // //             case 'rectangle':
-// // // //         console.log("the area of rectangle is:" + (l*b));
-// // // //             break
-// // // //         default:
-// // // //        console.log ("please enter valid data ");
-// // // // }
+//  var area = "triangle" ;
+//  var PI =3.142 , l=5, b=4, r=3;
+//  switch(area) {
+//      case 'circle':
+//          console.log("the area of circle is:" + PI*r**2);
+//          break;
+//          case 'triangle':
+//             console.log("the area of triangle is:" + (l*b)/2);
+//            break;
+//             case 'rectangle':
+//         console.log("the area of rectangle is:" + (l*b));
+//             break
+//         default:
+//        console.log ("please enter valid data ");
+// }
 
-// // // whilelopp
-// // // var num = 0;
-// // // while(num <=10){
-// // //     console.log(num);
-// // //     num++;
-// // // }
 
-// // Do-whileloop
+// whilelopp
+// var num = 0;
+// while(num <=10){
+//     console.log(num);
+//     num++;
+// }
+
+// Do-whileloop
 //  var num =0;
 //  do{
 //      console.log(num);
 //      num++;
 //  }while(num <=10);
 
-// // forloop
-// // for(var num=0; num<=10 ; num++){
-// //     console.log(num);
-// // }
+// forloop
 
-// // java script program to print table for given number (8)?
-// //
+// for(var num=0; num<=100 ;num++){
+//     console.log(num)
+// }
 
-// // for(var num=1 ; num<=10;num++){
-// //         var tableof =8
-// //     document.write(tableof + " * " + num + " = " + tableof * num +"<br/>")
-// //         console.log(tableof + " * " + num + " = " + tableof * num)
-// // }
+// for(var num=1; num<=10 ; num++){
+// var table=8
+//     console.log(`${table} * ${num} = ${num*table}`);
+// }
 
-// // funtion definition
-// // calling function
-// // function sum(){ var myfriends =[`owais`,`waqar`,`zeeshan`,`imran`,`waqar`];
-// console.log(myfriends.lastIndexOf("waqar",3))
+ // java script program to print table for given number (8)?
+
+//  for(var num=1 ; num<=10;num++){
+//          var tableof =8
+//          console.log(tableof + " * " + num + " = " + tableof * num)
+//  }
 
 // //     var a=10,b=20;
 // //     var total=a+b;
@@ -217,15 +220,7 @@
 // // console.log( myname );
 
 // // let myname = "Abdul Rahim";
-// // function sum(a,b){
-// //     var total=a+b;
-// //     console.log(total)
-// // }
-// // sum(90,30)
-// // console.log( myname );
 
-// // myname = "Abdul Rahim khan";
-// // console.log( myname );
 
 // // in const you can not change value of variable
 
@@ -233,6 +228,12 @@
 // // console.log( myname );
 
 // // let and const work only in curly brasis-block scope
+
+// // function sum(a,b){
+// //     var total=a+b;
+// //     console.log(total)
+// // }
+// // sum(90,30)
 
 // // function biodata(){
 // //     const myfirstname ="Abdul Rahim";
