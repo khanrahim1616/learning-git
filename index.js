@@ -182,11 +182,6 @@
 //          console.log(tableof + " * " + num + " = " + tableof * num)
 //  }
 
-// //     var a=10,b=20;
-// //     var total=a+b;
-// //     console.log(total)
-// // }
-// // sum()
 
 // // function parameter vs function arguments
 // // function sum(a,b){
@@ -227,7 +222,6 @@
 // // const myname = "Abdul Rahim";
 // // console.log( myname );
 
-// // let and const work only in curly brasis-block scope
 
 // // function sum(a,b){
 // //     var total=a+b;
